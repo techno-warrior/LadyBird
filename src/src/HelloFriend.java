@@ -1,4 +1,3 @@
-package src;
 /**
  * Created by Daniel on 12/05/2015.
  */
@@ -17,6 +16,7 @@ public class HelloFriend extends Application{
             launch(args);
         }
     public void start(Stage primaryStage){
+        MakeStars s = new MakeStars(5);
         primaryStage.setTitle("Hello Ryan!");
         Button btn = new Button();
         btn.setText("Say 'Hello'");
@@ -24,7 +24,7 @@ public class HelloFriend extends Application{
 
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello Ryan!");
+                System.out.println(s.stars());
             }
         });
 
