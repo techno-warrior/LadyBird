@@ -1,3 +1,4 @@
+package src;
 /**
  * Created by Daniel on 12/05/2015.
  */
@@ -16,14 +17,14 @@ public class HelloFriend extends Application{
             launch(args);
         }
     public void start(Stage primaryStage){
-        primaryStage.setTitle("Hello Daniel!");
+        primaryStage.setTitle("Hello Ryan!");
         Button btn = new Button();
         btn.setText("Say 'Hello'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello Daniel!");
+                System.out.println("Hello Ryan!");
             }
         });
 
